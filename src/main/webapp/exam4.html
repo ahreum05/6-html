@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>4-텍스트 입력하기</title>
+<style type="text/css">
+label {color: blue;}
+</style>
+</head>
+<body>
+     <!-- <form> : 입력 태그를 감싸는 태그 
+          => 클라이언트에서 서버로 데이터를 전달할 때 사용-->
+     <!-- 입력 태그 : <input>,<textarea>,<select> -->
+     <form action="test.html">
+         <fieldset>
+             <legend>내용 입력하기</legend>
+             
+             <div>
+                 <label>아이디</label>
+                 <input type="text" name="user_id" maxlength="20">
+             </div>
+             <div>
+                 <label>회원이름</label>
+                 <input type="text" name="user_name" maxlength="20">
+             </div>
+             <div>
+                 <label>비밀번호</label>
+                 <input type="password" name="user_pw" maxlength="20">
+             </div>
+             <div>
+                 <label>자기소개</label>
+                 <textarea row="5" cols="30" name="memo"></textarea>
+             </div>
+             <div>
+                 <label>숨겨진 항목</label>
+                 <input type="hidden" name="data" value="hidden_data">
+             </div>
+         </fieldset>
+         <div>
+             <input type="submit" value="전송">
+             <input type="reset" value="취소">
+         </div>
+     </form>
+
+</body>
+</html>

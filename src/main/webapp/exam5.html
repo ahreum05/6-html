@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>5-항목 선택하기</title>
+</head>
+<body>
+     <form action="test.html">
+         <fieldset>
+             <legend>취미 선택하기</legend>
+             
+             <div>                
+                 <input type="checkbox" name="hobby" id="h1" value="축구">
+                 <label for="h1">축구</label>
+         
+                 <input type="checkbox" name="hobby" id="h2" value="농구">        
+                 <label for="h2">농구</label>
+                 
+                 <input type="checkbox" name="hobby" id="h3" value="야구">
+                 <label for="h3">야구</label>
+                 
+             </div>
+           </fieldset>
+           <fieldset>
+             <legend>성별 선택하기</legend>
+             
+             <div>
+                <!-- 라디오버튼을 그룹으로 묶는 방법은 name 속성을 통일시키는 것 -->
+                <!-- 화면이 시작될 때 체크상태로 시작할 때는 checked 속성 사용-->
+                 <input type="radio" name="gender" id="m" value="남자" checked>
+                 <label for="m">남자</label>
+                 
+                 <input type="radio" name="gender" id="f" value="여자">
+                 <label for="f">여자</label>
+             </div>
+             </fieldset>
+             
+             <div>
+                 <input type="submit" value="전송">
+                 <input type="reset" value="취소">
+             </div>
+
+</body>
+</html>
